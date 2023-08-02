@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{ width: 5px; }
+
+::-webkit-scrollbar-track{ background-color: #f4b02771; }
+
+::-webkit-scrollbar-thumb{ background-color: #f4b027dc; }
+
+.welcome1{
+    background-image: url(../img/title2.jpg);
+    background-size: 100% 100%; /* cover */
+    height: 100%; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.text-center{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.text-center2{
+  text-align: center;
+  margin-top: 2%;
+  color: #f4b027;
+  font-family: 'Galada';
+  letter-spacing: 0.15rem;
+  text-decoration: underline;
+}
+table, th, td{
+  max-width: 100%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.486);
+  border: 2px solid #674603;
+  margin-bottom: 5%;
+  border-collapse: collapse;
+}
+td{
+  padding: 1% 2% 1% 2%;
+}
+th{
+  padding: 2% 0% 2% 0%;;
+}
+.row-text{
+  color: white;
+}
+#row-text2{
+  text-align: start;
+}
+.animate2 {
+  -webkit-animation: animatezoom 1s;
+  animation: animatezoom2 1s ease-in;
+}
+
+@-webkit-keyframes animatezoom2 {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom2 {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px){
+  .text-center{
+    font-size: 10px;
+  }
+  .input-price{
+    font-size: 0.5rem;
+  }
+  .welcome1{
+    background-image: url(../img/mobile.png);
+  }
+}

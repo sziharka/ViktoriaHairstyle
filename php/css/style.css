@@ -1,0 +1,490 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*CSS Reset*/
+}
+
+body{
+  background-color: black;
+  border: 0.0625rem solid #f4b02771;
+  height: auto;
+  width: auto;
+  overflow-x: hidden; /*Visszintes görgetést elrejti*/
+}
+
+::-webkit-scrollbar{ width: 5px; } /*Beállítja a götgezősáv méretét*/
+
+::-webkit-scrollbar-track{ background-color: #f4b02771; } /*Beállítja a götgezősáv színét*/
+
+::-webkit-scrollbar-thumb{ background-color: #f4b027dc; } /*Beállítja a görgő színét*/
+
+.Navbar{
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  border-bottom: 0.3125rem solid #f4b02771;
+}
+
+.Navbar:hover{
+  border-bottom: 0.3125rem solid #f4b027dc;
+  transition: 300ms;
+}
+
+.logo{
+  width: 15%;
+  height: 100%;
+}
+
+.headpic{
+  width: 85%;
+  height: 100%;
+}
+
+.navbar2{
+  position: absolute;
+  right: 2.5rem;
+  top: 11.0rem;
+}
+
+.welcome{
+  background-image: url(../img/title2.jpg);
+  background-size: cover;
+  height: auto;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome1{
+  background-image: url(../img/title2.jpg);
+  background-size: 100% 100%;
+  height: 37.5rem;
+  width: 100%;
+  border: 0.0625rem solid #f4b02771;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome2 >img{
+  width: 40%;
+}
+
+.welcome2{
+  color: #f4b027d0;
+  font-size: 2.1875rem;
+  width: 100%;
+  height: auto;
+}
+
+.welcome-title{
+  background-color: rgba(0, 0, 0, 0.811);
+  width: auto;
+  font-family: 'Alex Brush';
+  font-size: 2.1875rem;
+  text-align: center;
+  margin-top: 4%;
+  padding: 0.3125rem;
+  border: 0.125rem solid #f4b02771;
+}
+
+.welcome-title:hover{
+  color: #f4b027;
+  border: 0.125rem solid #f4b027;
+}
+
+.welcome2 img{
+  margin-left: 30%;
+  margin-top: 5%;
+  max-width: 100%;
+  height: auto;
+  border: 0.125rem solid #f4b02771;
+  border-radius: 10%;
+  display: flex;
+}
+
+.welcome2 img:hover{
+  color: #f4b027;
+  border: 0.125rem solid #f4b027;
+}
+
+.btn-close{
+  background-color: white;
+}
+
+.price-list img{
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 0.125rem solid #f4b02771;
+  border-radius: 10%;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-item{
+  float: right;
+  border: 0.0625rem solid #f4b02771;
+  background-color: black;
+  width: auto;
+}
+ 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-family:'Galada';
+  font-size: 100%;
+  letter-spacing: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  border: 0.0625rem solid #f4b02771;
+}
+  
+li a:hover {
+  border: 0.0625rem solid #f4b027dc;
+  color: #f4b027dc;
+  transition: 300ms;
+}
+
+.btn {                      /* sima bootstrap gomb átformázása */
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-family: 'Galada';
+}
+
+.myButton {                 /* price.html-en lévő gomb saját formázása */
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-family: 'Galada';
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.myButton2 {                /* woman/man gombok formázása */
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-family: 'Galada';
+  font-size: 100%;
+  height: auto;
+  margin-left: 45%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.btn:hover {                /* bootstrap gombok további átformázása :hover */
+  color: #f4b027;
+  border: 1px solid green;
+  background-color: rgb(30, 30, 30);
+  transition: 300ms;
+}
+
+.btn2:hover {              /* close gomb átformázása */
+  border: 1px solid red;
+}
+
+.priceButton {             /* price.html-en lévő keret formázása */
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.623);
+  border: 0.125rem solid #f4b02771;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50%;
+  display: grid;
+  justify-items: center;
+}
+
+.priceButton:hover{       /* price.html-en lévő keret formázása */
+  border: 0.125rem solid #f4b027;
+  transition: 300ms;
+}
+
+.priceText{         /* price.html-en lévő keret szövegének formázása */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  color: #f4b027dc;
+  text-align: center;
+  padding: 2% 2% 0% 2%;
+}
+
+.checked{                /* pontozás, későbbi fejlesztés */
+  color: orange;
+}
+
+.rounded{                /* bootstrap "képek" körré formázása */
+  clip-path: circle(50%);
+}
+
+.modalText{
+  color: #f4b027;
+  font-family: 'Galada';
+  letter-spacing: 0.15rem;
+}
+
+.modalPriceText{
+  color: chartreuse;
+  letter-spacing: 0.15rem;
+  font-family: 'Galada';
+}
+
+.warningText{
+  color: rgb(255, 0, 0);
+  letter-spacing: 0.15rem;
+  font-family: 'Galada';
+}
+
+.modalHR{
+  color: #f4b027;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+  .navbar-item a{
+    letter-spacing: normal;
+    padding: 0.25rem 0.325rem;
+  }
+
+  .Navbar{
+    background-image: url(../img/logo2.gif);
+  }
+
+  .headtitle img{
+    display: none;
+  }
+
+  .welcome{
+    background-image: url(../img/mobile.png);
+  }
+
+  .welcome1{
+    height: 25rem;
+    background-image: url(../img/mobile.png);
+  }
+
+  .welcome2 img{
+    margin-top: 10%;
+    width: 65%;
+    margin-left: 17%;
+    background-image: url(../img/mobile.png);
+  }
+
+  .welcome-title{
+    margin-left: 0%;
+    font-size: 1.7rem;
+  }
+
+  .headpic{
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+  }
+
+  .myButton{
+    font-size: 1rem;
+  }
+
+  .priceText{
+    font-size: 1rem;
+  }
+}
+
+.pictures1{
+  position: relative;
+  margin-top: 0.3125rem;
+  margin-left: 0.3125rem;
+  height: 50%;
+  width: 30%;
+  display: flex;
+}
+
+.image-title{
+  background-color: rgba(0, 0, 0, 0.811);
+  border: 0.0625rem solid #f4b02771;
+  color: #f4b027c0;
+  font-weight: bold;
+  font-size: 1.5625rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  flex: none;
+}
+
+.image-title:hover{
+  color: #f4b027;
+  border: 0.125rem solid #f4b027;
+}
+
+.pictures1 img{
+  height: 100%;
+  width: 70%;
+  border: 0.125rem solid #f4b027c0;
+  border-radius: 5%;
+  transition: .6s ease-in-out;
+  transform-origin: left;
+  clip-path: circle(40%);
+}
+
+.pictures1 img:hover{
+  z-index: 1;
+  transform: scale(2);
+}
+
+.mapouter{
+  border: 0.125rem solid #f4b02771;
+  margin: auto;
+}
+
+.footerContainer{
+  display: flex;
+  border-right: 0.0625rem solid #f4b02771;
+  margin-bottom: 5%;
+}
+
+.contact{
+  flex: 1;
+}
+
+.fa {
+  padding: 1.25rem;
+  font-size: 1.875rem;
+  width: auto;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.3125rem 0.125rem;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 4.1075rem;
+}
+
+.fa-instagram {
+  background: #9c1d45;
+  color: white;
+}
+
+.fa-whatsapp{
+  background: rgb(5, 161, 5);
+  color: white;
+}
+
+.phone{
+  position: relative;
+  bottom: 1%;
+  width: 8.125rem;
+  height: auto;
+  max-width: max-content;
+  margin-inline: auto;
+  font-size: larger;
+  line-height: normal;
+  color: hsl(38, 61%, 73%);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Alex Brush';
+  letter-spacing: 0.125rem;
+}
+
+.phone::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.3125rem;
+  border-block: 0.0625rem solid hsl(38, 61%, 73%);
+  transform: scaleX(0.2);
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+.phone:is(:hover,:focus-visible)::after{  /*Aláhúzás animáció*/
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.phone::after{ 
+  bottom: -0.3125rem;
+}
+
+.open-time{
+  margin-top: 1%;
+}
+
+table{
+  position: absolute;
+  right: 40%;
+  font-weight: bold;
+}
+
+td{
+  color: white;
+  font-size: 1.2rem; 
+  padding: 0.4rem; 
+}
+
+th{
+  color: white;
+  font-size: 1.9rem; 
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px){
+  .pictures1{
+    position: relative;
+    margin-top: 2.1875rem;
+    margin-left: 0.9375rem;
+    height: 70%;
+    width: 50%;
+  }
+
+  .pictures1 img:hover{
+    transform: scale(2.5);
+  }
+
+  .image-title{
+    font-size: 1.2rem;
+  }
+
+  .phone{
+    display: none;
+  }
+
+  table{
+    right: 5%;
+  }
+
+  td{
+    font-size: 1rem;
+  }
+
+  th{
+    font-size: 1.5rem;
+  }
+}
